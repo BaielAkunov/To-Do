@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lavenderblush;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 55px;
+    color: darkblue;
+}
+
+.mainBlock{
+    width: 800px;
+    background-color: hotpink;
+    box-shadow: 0 0 30px rgb(201, 105, 178);
+    margin-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+.mainBlock div{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.textIn{
+    height: 2em;
+    text-align: center;
+}
+#AddBtn{
+    background-color: indigo;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: monospace;
+}
+#AddBtn:active{
+    background-color: aliceblue;
+    color: indigo;
+}
+.taskItem{
+    list-style: none;
+    padding: 10px 5px 10px 20px;
+    background-color: rgb(54, 182, 25);
+    color: azure;
+    box-shadow: 0 0 30px rgb(56, 251, 63);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 15fr 1fr 1fr;
+}
+.textIn{
+    transition: .2s;
+}
+.textIn:focus{
+    background-color: rgb(224, 211, 251);
+    
+}
+
+/* .taskItem:nth-child(2n) {
+    background-color: rgb(186, 26, 26);
+    color: azure;
+    box-shadow: 0 0 30px rgb(251, 95, 56);
+    
+}
+.taskItem:nth-child(3n) {
+    background-color: rgb(34, 26, 186);
+    color: azure;
+    box-shadow: 0 0 30px rgb(56, 199, 251);
+    
+} */
+.btn{
+    width: 22px;
+}
+.done{
+    text-decoration: line-through;
+    color: rgb(203, 201, 201);
+    transition: .1s;
+}
